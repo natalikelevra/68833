@@ -199,7 +199,7 @@ else {
             display: block;
             margin-bottom: 8px;
             font-weight: 600;
-            color: #2c3e50;
+            color: #ccffff;
         }
         
         .required:after {
@@ -260,7 +260,7 @@ else {
         }
         
         button {
-            background-color: #3498db;
+            background-color: #ffccff;
             color: white;
             border: none;
             padding: 12px 24px;
@@ -273,7 +273,7 @@ else {
             font-weight: 600;
         }
       button:hover {
-            background-color: #2980b9;
+            background-color: #ff99ff;
         }
     </style>
 </head>
