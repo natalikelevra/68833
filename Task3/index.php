@@ -96,9 +96,9 @@ else {
     // Если ошибок нет - сохраняем в БД
     if (empty($errors)) {
         // Подключение к БД
-        $user = 'u67443'; // Заменить на ваш логин
-        $pass = '3234547'; // Заменить на пароль
-        $db = new PDO('mysql:host=localhost;dbname=u67443', $user, $pass, [
+        $user = 'u68833'; // Заменить на ваш логин
+        $pass = '9916414'; // Заменить на пароль
+        $db = new PDO('mysql:host=localhost;dbname=u68833', $user, $pass, [
             PDO::ATTR_PERSISTENT => true,
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
         ]);
@@ -175,12 +175,12 @@ else {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f5f5f5;
+            background-color: #336666;
         }
         
         h1 {
             text-align: center;
-            color: #2c3e50;
+            color: #660000
             margin-bottom: 30px;
         }
         
