@@ -199,7 +199,7 @@ else {
             display: block;
             margin-bottom: 8px;
             font-weight: 600;
-            color: #ccffff;
+            color: #660000;
         }
         
         .required:after {
