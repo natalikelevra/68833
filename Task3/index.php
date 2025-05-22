@@ -43,7 +43,7 @@ if ($errors) {
 // Подключение к БД
 $user = 'u68833'; 
 $pass = '9916414';
-$db = new PDO('mysql:host=localhost;dbname=u67443', $user, $pass, [
+$db = new PDO('mysql:host=localhost;dbname=u68833', $user, $pass, [
   PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
 ]);
 
