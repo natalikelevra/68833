@@ -4,97 +4,102 @@
   <meta charset="UTF-8">
   <title>Анкета разработчика</title>
   <style>
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f5f7fa;
-        margin: 0;
-        padding: 20px;
-        color: #333;
-    }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff0f5; /* Светло-розовый фон */
+  margin: 0;
+  padding: 20px;
+  color: #4a1c40;
+}
 
-    .container {
-        max-width: 600px;
-        margin: 0 auto;
-        background: white;
-        padding: 25px;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    h1 {
-        text-align: center;
-        color: #2c3e50;
-        margin-bottom: 20px;
-    }
-    label {
-        display: block;
-        margin: 15px 0 5px;
-        font-weight: bold;
-        color: #34495e;
-    }
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff9fa; /* Очень светлый розовый фон контейнера */
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(155, 0, 55, 0.1);
+}
 
-    input[type="text"],
-    input[type="tel"],
-    input[type="email"],
-    input[type="date"],
-    select,
-    textarea {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        font-size: 16px;
-        box-sizing: border-box;
-    }
+h1 {
+  text-align: center;
+  color: #800020; /* Бордовый заголовок */
+  margin-bottom: 20px;
+}
 
-    select[multiple] {
-        height: 120px;
-    }
-    
-    .radio-group, .checkbox-group {
-        margin: 10px 0;
-    }
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+  color: #800020; /* Бордовый для лейблов */
+}
 
-    .radio-group label, .checkbox-group label {
-        display: inline-block;
-        margin-right: 15px;
-        font-weight: normal;
-    }
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cc99a9;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #fff9fa;
+}
 
-    button {
-        background: #3498db;
-        color: white;
-        border: none;
-        padding: 12px 20px;
-        font-size: 16px;
-        border-radius: 5px;
-        cursor: pointer;
-        width: 100%;
-        margin-top: 20px;
-        transition: background 0.3s;
-    }
+select[multiple] {
+  height: 120px;
+}
 
-    button:hover {
-        background: #2980b9;
-    }
+.radio-group, .checkbox-group {
+  margin: 10px 0;
+}
 
-    .error-message {
-        color: #e74c3c;
-        margin: 5px 0 15px 0;
-        font-size: 14px;
-    }
+.radio-group label, .checkbox-group label {
+  display: inline-block;
+  margin-right: 15px;
+  font-weight: normal;
+  color: #800020; /* Бордовый для радио/чекбоксов */
+}
 
-    .error-field {
-        border-color: #e74c3c !important;
-        background-color: #fceae9;
-    }
+button {
+  background: #800020; /* Бордовый для кнопки */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
 
-    .success {
-        color: #27ae60;
-        text-align: center;
-        margin: 20px 0;
-        font-weight: bold;
-    }
-  </style>
+button:hover {
+  background: #5a0018; /* Темнее бордовый при наведении */
+}
+
+.error-message {
+  color: #e3170a; /* Ярко-красный для ошибок */
+  margin: 5px 0 15px 0;
+  font-size: 14px;
+}
+
+.error-field {
+  border-color: #e3170a !important;
+  background-color: #ffebee;
+}
+
+.success {
+  color: #2e7d32; /* Зеленый для успеха (оставлен для контраста) */
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+}
+</style>
+
 </head>
 <body>
   <div class="container">
