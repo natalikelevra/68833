@@ -99,11 +99,6 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Анкета разработчика</h1>
-    <!-- Здесь форма -->
-  </div>
-</body>
 
   <div class="container">
     <h1>Анкета разработчика</h1>
