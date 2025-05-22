@@ -118,7 +118,7 @@ setcookie('bio_value', $_POST['bio'] ?? '', time() + 365 * 24 * 60 * 60);
 $user = 'u68833';
 $pass = '9916414';
 try {
-  $db = new PDO('mysql:host=localhost;dbname=u67443', $user, $pass, [
+  $db = new PDO('mysql:host=localhost;dbname=u68833', $user, $pass, [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
   ]);
 
