@@ -6,30 +6,30 @@
   <style>
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f5f7fa;
+        background-color: #f5f0e6; /* Бежевый фон */
         margin: 0;
         padding: 20px;
-        color: #333;
+        color: #2c3e50;
     }
 
     .container {
         max-width: 600px;
         margin: 0 auto;
-        background: white;
+        background: #fffaf0; /* Светло-бежевый фон контейнера */
         padding: 25px;
         border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
     h1 {
         text-align: center;
-        color: #2c3e50;
+        color: #1a237e; /* Тёмно-синий заголовок */
         margin-bottom: 20px;
     }
     label {
         display: block;
         margin: 15px 0 5px;
         font-weight: bold;
-        color: #34495e;
+        color: #1a237e; /* Тёмно-синий для лейблов */
     }
 
     input[type="text"],
@@ -40,10 +40,11 @@
     textarea {
         width: 100%;
         padding: 10px;
-        border: 1px solid #ddd;
+        border: 1px solid #b0bec5;
         border-radius: 5px;
         font-size: 16px;
         box-sizing: border-box;
+        background-color: #fffaf0; /* Светло-бежевый фон полей */
     }
 
     select[multiple] {
@@ -58,10 +59,11 @@
         display: inline-block;
         margin-right: 15px;
         font-weight: normal;
+        color: #1a237e; /* Тёмно-синий для текста радио/чекбоксов */
     }
 
     button {
-        background: #3498db;
+        background: #1a237e; /* Тёмно-синяя кнопка */
         color: white;
         border: none;
         padding: 12px 20px;
@@ -74,22 +76,22 @@
     }
 
     button:hover {
-        background: #2980b9;
+        background: #0d47a1; /* Более насыщенный тёмно-синий при наведении */
     }
 
     .error-message {
-        color: #e74c3c;
+        color: #c62828; /* Красный для ошибок (оставил насыщенным для контраста) */
         margin: 5px 0 15px 0;
         font-size: 14px;
     }
 
     .error-field {
-        border-color: #e74c3c !important;
-        background-color: #fceae9;
+        border-color: #c62828 !important;
+        background-color: #ffebee;
     }
 
     .success {
-        color: #27ae60;
+        color: #2e7d32; /* Зелёный для успеха (оставил для контраста) */
         text-align: center;
         margin: 20px 0;
         font-weight: bold;
@@ -97,6 +99,12 @@
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Анкета разработчика</h1>
+    <!-- Здесь форма -->
+  </div>
+</body>
+
   <div class="container">
     <h1>Анкета разработчика</h1>
     <?php
