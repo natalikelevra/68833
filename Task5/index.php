@@ -3,7 +3,7 @@ session_start();
 header('Content-Type: text/html; charset=UTF-8');
 
 try {
-    $db = new PDO('mysql:host=localhost;dbname=u67443', 'u67443', '3234547', [
+    $db = new PDO('mysql:host=localhost;dbname=u68833', 'u68833', '9916414', [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
     ]);
