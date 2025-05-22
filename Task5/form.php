@@ -1,169 +1,109 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <title>Анкета разработчика</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=MedievalSharp&display=swap');
-    
     body {
-        font-family: 'MedievalSharp', cursive;
-        background-color: #0a0a0a;
-        margin: 0;
-        padding: 20px;
-        color: #d8d8d8;
-        background-image: 
-            radial-gradient(circle at 10% 20%, rgba(90, 0, 0, 0.1) 0%, transparent 20%),
-            radial-gradient(circle at 90% 80%, rgba(90, 0, 0, 0.1) 0%, transparent 20%);
-    }
+      
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e7eb 100%);
+  margin: 0;
+  padding: 20px;
+  color: #2c3e50;
+}
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+}
+label {
+  display: block;
+  margin: 15px 0 8px;
+  font-weight: 600;
+  color: #34495e;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+select[multiple] {
+  height: 120px;
+}
+.radio-group, .checkbox-group {
+  margin: 15px 0;
+}
+.radio-group label, .checkbox-group label {
+  display: inline-block;
+  margin-right: 15px;
+  font-weight: normal;
+}
+button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 25px;
+  transition: background 0.3s, transform 0.2s;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+button:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+}
+.error-message {
+  color: #e74c3c;
+  margin: 5px 0 15px 0;
+  font-size: 14px;
+}
+.error-field {
+  border-color: #e74c3c !important;
+  background-color: #fceae9;
+}
+.success {
+  color: #27ae60;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+}
 
-    .container {
-        max-width: 600px;
-        margin: 0 auto;
-        background: #1a1a1a;
-        padding: 30px;
-        border-radius: 0;
-        box-shadow: 0 0 25px rgba(139, 0, 0, 0.3);
-        border: 1px solid #3a0000;
-        position: relative;
-        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M0 0 L100 0 L100 100 L0 100 Z" fill="none" stroke="%233a0000" stroke-width="0.5"/></svg>');
-    }
-
-    h1 {
-        text-align: center;
-        color: #8b0000;
-        margin-bottom: 20px;
-        font-family: 'Cinzel Decorative', cursive;
-        text-shadow: 2px 2px 3px #000;
-        letter-spacing: 1px;
-        font-size: 26px;
-        position: relative;
-        padding-bottom: 10px;
-    }
-
-    h1:after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 25%;
-        right: 25%;
-        height: 1px;
-        background: linear-gradient(90deg, transparent, #5a0000, transparent);
-    }
-
-    label {
-        display: block;
-        margin: 15px 0 5px;
-        font-weight: bold;
-        color: #a0a0a0;
-        letter-spacing: 0.5px;
-    }
-
-    input[type="text"],
-    input[type="tel"],
-    input[type="email"],
-    input[type="date"],
-    select,
-    textarea {
-        width: 100%;
-        padding: 10px 12px;
-        border: 1px solid #333;
-        border-radius: 0;
-        font-size: 16px;
-        box-sizing: border-box;
-        background-color: #222;
-        color: #d8d8d8;
-        font-family: 'MedievalSharp', cursive;
-        transition: all 0.3s;
-    }
-
-    input:focus,
-    select:focus,
-    textarea:focus {
-        outline: none;
-        border-color: #8b0000;
-        box-shadow: 0 0 8px rgba(139, 0, 0, 0.4);
-    }
-
-    select[multiple] {
-        height: 120px;
-    }
-    
-    .radio-group, .checkbox-group {
-        margin: 10px 0;
-    }
-
-    .radio-group label, .checkbox-group label {
-        display: inline-block;
-        margin-right: 15px;
-        font-weight: normal;
-    }
-
-    button {
-        background: linear-gradient(to bottom, #5a0000, #3a0000);
-        color: #e0e0e0;
-        border: none;
-        padding: 12px 20px;
-        font-size: 16px;
-        border-radius: 0;
-        cursor: pointer;
-        width: 100%;
-        margin-top: 20px;
-        transition: all 0.3s;
-        font-family: 'Cinzel Decorative', cursive;
-        letter-spacing: 1px;
-        position: relative;
-    }
-
-    button:hover {
-        background: linear-gradient(to bottom, #6a0000, #4a0000);
-        color: #fff;
-    }
-
-    .error-message {
-        color: #ff4d4d;
-        margin: 5px 0 15px 0;
-        font-size: 14px;
-        text-shadow: 1px 1px 1px #000;
-    }
-
-    .error-field {
-        border-color: #ff4d4d !important;
-        background-color: #2a0000;
-    }
-
-    .success {
-        color: #5a9270;
-        text-align: center;
-        margin: 20px 0;
-        font-weight: bold;
-    }
-
-    /* Готические декоративные уголки */
-    .container::before,
-    .container::after {
-        content: "";
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        border-style: solid;
-        border-color: #5a0000;
-        border-width: 0;
-    }
-
-    .container::before {
-        top: 0;
-        left: 0;
-        border-top-width: 2px;
-        border-left-width: 2px;
-    }
-
-    .container::after {
-        top: 0;
-        right: 0;
-        border-top-width: 2px;
-        border-right-width: 2px;
-    }
 </style>
 
     
